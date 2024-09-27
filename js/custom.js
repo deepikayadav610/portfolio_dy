@@ -6,13 +6,25 @@ $(document).ready(function () {
         $(".about-btn").removeClass("active");
         $(".skills-btn").addClass("active");
         $(".about-text").hide();
-        $(".skills-certification-text").css("display", "flex");
+        $(".skills-certification-text").css("display", "inline-block");
     });
     $(".about-btn").click(function () {
         $(".skills-btn").removeClass("active");
         $(".about-btn").addClass("active");
         $(".skills-certification-text").hide();
         $(".about-text").show();
+    });
+    $(".certificateBtn").click(function () {
+        $(".certificateBtn").addClass("activeSC");
+        $(".skillBtn").removeClass("activeSC");
+        $(".certification-text").show();
+        $(".skills-text").hide();
+    });
+    $(".skillBtn").click(function () {
+        $(".certificateBtn").removeClass("activeSC");
+        $(".skillBtn").addClass("activeSC");
+        $(".certification-text").hide();
+        $(".skills-text").show();
     });
 
 });

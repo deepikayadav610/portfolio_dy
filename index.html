@@ -9,6 +9,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -17,7 +19,7 @@
     <nav class="navbar fixed-top bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Deepika<span>Yadav</span></a>
-            <ul class="nav justify-content-between no-hover">
+            <ul class="nav justify-content-between ">
                 <li class="nav-item home">
                     <a class="nav-link " aria-current="page" href="#">Home</a>
                 </li>
@@ -34,13 +36,13 @@
                     <a class="nav-link " href="#education">Education</a>
                 </li>
                 <li class="nav-item experience">
-                    <a class="nav-link " href="#work">Work Experience</a>
+                    <a class="nav-link " href="#work">Work Experience/ Internships</a>
                 </li>
                 <li class="nav-item services">
                     <a class="nav-link " href="#services">What I Do</a>
                 </li>
                 <li class="nav-item contact">
-                    <a class="nav-link " href="#contact">Contact Us</a>
+                    <a class="nav-link " href="#contact">Contact Me</a>
                 </li>
                 <li class="nav-item">
                     <div class="menu-icon" id="menuIcon">
@@ -55,9 +57,9 @@
                 <a href="#" class="nav-link">Home</a>
                 <a href="#about-section" class="nav-link">About</a>
                 <a href="#education" class="nav-link">Education</a>
-                <a href="#work" class="nav-link">Work Experience</a>
+                <a href="#work" class="nav-link">Work Experience/ Internships</a>
                 <a href="#services" class="nav-link">What I Do</a>
-                <a href="#contact" class="nav-link">Contact Us</a>
+                <a href="#contact" class="nav-link">Contact Me</a>
             </div>
         </div>
 
@@ -66,12 +68,17 @@
 
     <!-- home section starts -->
     <div class="container-fluid mt-5 home-section" id="home">
+
         <div class="text mt-4">
-            <p>Hi, I'm <span>Deepika Yadav</span>,<br> a Web & App Developer.</p>
+            <p>Hi, I'm <span>Ms. Deepika Yadav</span>,<br> a Web & App Developer.</p>
+            <a href="./docs/Resume-2.0.pdf" class="btn btn-custom resume-button mt-2" download>
+                Download Resume
+            </a>
         </div>
         <div class="img">
             <img src="./img/deepikayadav.png" alt="deepika" />
         </div>
+
     </div>
     <!-- home section ends -->
 
@@ -80,59 +87,131 @@
     <div class="container-about about-section mt-5 " id="about-section">
         <div class="header-text">About <span>Me</span></div>
         <div class="home-btn mt-4">
-            <button class="about-btn active">About me</button>
+            <button class="about-btn active">Me</button>
             <button class="skills-btn">Skills and Certifications</button>
         </div>
         <div class="about-me mt-4">
             <div class="about-text">
-                <img src="./img/deepikayadav.png" alt="deepika" />
+                <img src="./img/me2.png" alt="deepika" />
                 <div>
                     <p class="about-text-p ">Hi, I’m <span>Deepika Yadav</span>, a dedicated and passionate web
                         developer with a solid
-                        foundation in Computer Science &
-                        Engineering. Currently pursuing my B.Tech with a CGPA of 8.00, I have developed expertise in web
-                        technologies like HTML,
-                        CSS, JavaScript, ReactJS, Node.js, and databases like MySQL. My experience spans multiple
+                        foundation in <span>Computer Science</span> &
+                        Engineering. Currently pursuing my <span>B.Tech</span> with a CGPA of 7.50, I have developed
+                        expertise in web
+                        technologies like <span>HTML,
+                            CSS, JavaScript, ReactJS, Node.js, and databases like MySQL</span>. My experience spans
+                        multiple
                         virtual
                         internships where I
                         honed my skills in building responsive, dynamic web applications.
                         <br>
-                        I’m continuously learning and applying new technologies, including Flutter,
-                        Dart,
-                        and
-                        Python, to solve real-world
+                        I’m continuously learning and applying new technologies, including <span>Flutter,
+                            Dart,
+                            and
+                            Python</span>, to solve real-world
                         problems and create user-friendly web solutions. I'm actively seeking opportunities to grow
                         professionally
                         and expand my
-                        knowledge in both web development and cybersecurity.
+                        knowledge in both <span>web development and app development with backend integration</span>.
                     </p>
 
                 </div>
 
             </div>
             <div class="skills-certification-text">
-
+                <div class="skill-certificateBtn d-flex">
+                    <button class="skillBtn activeSC">Skills</button>
+                    <button class="certificateBtn">Certificates</button>
+                </div>
                 <div class="skills-text ">
-                    <p class="skills-text-p mb-3">
-                        Skills & Expertise
+                    <p class="skills-text-p mb-5">
+                        Skills
                     </p>
-                    <ul>
-                        <li><b>Front-end Development:</b>HTML, CSS, JavaScript, ReactJS</li>
-                        <li><b>Back-end Development:</b>Node.js, PHP, MySQL</li>
-                        <li><b>Mobile Development:</b>Flutter, Dart</li>
-                        <li><b>Additional Languages:</b>Python</li>
-                        <li><b>Cybersecurity Knowledge:</b>Certified under NIELIT CyberShikshaa program</li>
-                    </ul>
+                    <div class="skills-items mt-4 mb-5">
+                        <div class="card frontend">
+                            <img src="./img/frontend.webp" alt="frontend development" />
+                            <div class="frontend-text">
+                                <p class="development">Front-end Development:</p>
+                                <p class="skill">HTML, CSS, JavaScript, ReactJS</p>
+                            </div>
+
+                        </div>
+                        <div class="card frontend">
+                            <img src="./img/backend.jfif" alt="backend development" />
+                            <div class="frontend-text">
+                                <p class="development">Back-end Development:</p>
+                                <p class="skill">Node.js, PHP, MySQL</p>
+                            </div>
+                        </div>
+                        <div class="card frontend">
+                            <img src="./img/mobile-developer.jpg" alt="mobile development" />
+                            <div class="frontend-text">
+                                <p class="development">Mobile Development:</p>
+                                <p class="skill">Flutter, Dart</p>
+                            </div>
+                        </div>
+                        <div class="card frontend">
+                            <img src="./img/python-dev.jpg" alt="additional development" />
+                            <div class="frontend-text">
+                                <p class="development">Additional Languages:</p>
+                                <p class="skill">Python</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="certification-text">
-                    <p class="certification-text-p mb-3">Certifications</p>
-                    <ul>
+                    <p class="certification-text-p mt-4 mb-5">Certifications</p>
+                    <div class="certification-items">
+                        <div class="card certificate-item ">
+                            <a href="./img/web_development_certificate.png"><img
+                                    src="./img/web_development_certificate.png" alt="web development certificate" /></a>
+
+                            <div class="frontend-text">
+                                <p class="development">Web Development Certification</p>
+                                <p class="company-name"><i>Internshala Trainings</i></p>
+                                <p class="certificate">Successfully completed an 8-week online training program on Web
+                                    Development. The course covered key web technologies
+                                    including HTML, CSS, Bootstrap, DBMS, PHP, JavaScript, and React, with practical
+                                    final project modules.</p>
+                            </div>
+                        </div>
+                        <div class="card certificate-item">
+                            <a href="./img/linkedin_certificate.jpeg"><img src="./img/linkedin_certificate.jpeg"
+                                    alt="ai certificate" /></a>
+
+                            <div class="frontend-text">
+                                <p class="development">Career Essentials in Generative AI</p>
+                                <p class="company-name"><i>LinkedIn Learning, Microsoft</i></p>
+                                <p class="certificate">Completed a comprehensive learning path focused on Generative AI,
+                                    covering essential topics such as Computer Ethics,
+                                    Artificial Intelligence (AI), and Generative AI. This training enhanced my
+                                    understanding of AI ethics and cutting-edge
+                                    AI technologies.</p>
+                            </div>
+                        </div>
+                        <div class="card certificate-item">
+                            <a href="./img/nielit-certificate.jpg"><img src="./img/nielit-certificate.jpg"
+                                    alt="web development certificate" /></a>
+
+                            <div class="frontend-text">
+                                <p class="development">CyberShikshaa Fundamentals</p>
+                                <p class="company-name"><i>Issued by NIELIT, Microsoft, DSCI, and LinkedIn</i></p>
+                                <p class="certificate">Successfully completed an online training program in
+                                    Cybersecurity Awareness under the CyberShikshaa Fundamentals
+                                    initiative, with a focus on enhancing skills in cybersecurity, conducted in
+                                    collaboration with Microsoft, DSCI, and
+                                    LinkedIn Career Essentials.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <ul>
                         <li>
                             <b>Web Development</b> (Internshala Trainings)
                         </li>
                         <li><b>Web Development</b> (Internshala Trainings)</li>
                         <li><b>Career Essentials in Generative AI</b> (Microsoft and LinkedIn)</li>
-                    </ul>
+                    </ul> -->
                 </div>
 
             </div>
@@ -150,7 +229,7 @@
             <p><b>Bachelor of Technology (B.Tech) in Computer Science & Engineering</b></p>
             <p>Deen Dayal Upadhyaya Gorakhpur University Gorakhpur</p>
             <p><i>November 2021 - Present</i></p>
-            <p><b>CGPA:</b> 8.00/10</p>
+            <p><b>CGPA:</b> 7.50/10</p>
         </div>
 
         <br>
@@ -171,7 +250,7 @@
 
     </div>
     <!-- education section ends -->
-    
+
     <!-- experience section starts -->
     <div class="work-experience" id="work">
         <h1>Work <span>Experience</span> / Intern<span>ship</span></h1>
@@ -196,60 +275,65 @@
     <!-- experience section ends -->
 
     <!-- services section starts -->
-    <div class="services-section " id="services">
-        <h1>What I <span>Do</span> </h1>
+    <div class="services-section" id="services">
+        <h1>What I <span>Do</span></h1>
         <div class="allServices mt-4">
-            <div class="service1 card">
-                <p class="web p-3">Web Development</p>
+            <div class="service card">
+
+                <p class="web p-3"><i class="fas fa-laptop-code icon"></i>Web Development</p>
                 <p class="p-3">I create visually appealing, responsive, and dynamic websites tailored to your business
-                    needs. Utilizing modern web
-                    technologies such as HTML, CSS, JavaScript, and ReactJS, I build websites that are not only
-                    aesthetically pleasing but
-                    also optimized for performance and user experience.</p>
+                    needs. Utilizing modern web technologies such as HTML, CSS, JavaScript, and ReactJS, I build
+                    websites that are not only aesthetically pleasing but also optimized for performance and user
+                    experience.</p>
             </div>
 
-            <div class="service2 card">
-                <p class="web p-3">Mobile App Development</p>
+            <div class="service card">
+
+                <p class="web p-3"><i class="fas fa-mobile-alt icon"></i>Mobile App Development</p>
                 <p class="p-3">Specializing in cross-platform mobile applications, I develop apps using Flutter that
-                    provide a seamless experience on
-                    both Android and iOS. Whether it's an intuitive user interface or smooth functionality, I ensure
-                    your mobile app stands
-                    out and performs exceptionally well.</p>
+                    provide a seamless experience on both Android and iOS. Whether it's an intuitive user interface or
+                    smooth functionality, I ensure your mobile app stands out and performs exceptionally well.</p>
             </div>
 
-            <div class="service3 card">
-                <p class="web p-3">Backend & API Integration</p>
+            <div class="service card">
+
+                <p class="web p-3"><i class="fas fa-code-branch icon"></i>Backend & API Integration</p>
                 <p class="p-3">From building secure and scalable backend systems to integrating third-party services, I
-                    can handle your application’s
-                    backend with technologies like Node.js and MySQL. My expertise includes designing RESTful APIs that
-                    facilitate efficient
-                    data communication between frontend and backend.</p>
+                    can handle your application’s backend with technologies like Node.js and MySQL. My expertise
+                    includes
+                    designing RESTful APIs that facilitate efficient data communication between frontend and backend.
+                </p>
             </div>
 
-            <div class="service4 card">
-                <p class="web p-3">Database Design & Management</p>
+            <div class="service card">
+
+                <p class="web p-3"><i class="fas fa-database icon"></i>Database Design & Management</p>
                 <p class="p-3">Leveraging MySQL, I offer efficient database design and management solutions that ensure
-                    data consistency, reliability,
-                    and scalability. Whether it's setting up a new database or optimizing an existing one, I help ensure
-                    that your data
-                    systems run smoothly.</p>
+                    data consistency, reliability, and scalability. Whether it's setting up a new database or optimizing
+                    an
+                    existing one, I help ensure that your data systems run smoothly.</p>
             </div>
         </div>
     </div>
+
     <!-- services section ends -->
 
     <!-- contact me section -->
     <div class="container" id="contact">
         <div class="contact-form">
             <h1 class="text-center mb-4">Contact <span>Me</span></h1>
-            <div class="contact-link d-flex">
-                <i class="fa-solid fa-envelope fa-xl"></i>
-                <p>deepikaydv6104@gmail.com</p>
+
+            <div class="contact-info">
+                <div class="contact-link d-flex align-items-center">
+                    <i class="fa-solid fa-envelope fa-xl"></i>
+                    <p class="mb-0">deepikaydv6104@gmail.com</p>
+                </div>
+                <div class="linkedinn d-flex align-items-center">
+                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                    <a href="https://www.linkedin.com/in/deepika-yadav-5a3502274" target="_blank">My Profile</a>
+                </div>
             </div>
-            <div class="linkedinn d-flex">
-                <i class="fa-brands fa-linkedin fa-xl"></i>
-                <a href="www.linkedin.com/in/deepika-yadav-5a3502274">My Profile</a>
-            </div>
+
             <form class="needs-validation" novalidate id="contactForm">
                 <!-- Name Field -->
                 <div class="mb-3">
@@ -285,13 +369,15 @@
             </form>
         </div>
     </div>
+
     <!-- contact me section ends -->
 
     <!-- footer starts -->
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="container d-flex justify-content-between">
             <p class="mb-0">All rights reserved &copy; Deepika Yadav 2024</p>
+            <a href="#"><i class="fa-solid fa-caret-up fa-xl"></i></a>
         </div>
     </footer>
     <!-- footer ends -->
