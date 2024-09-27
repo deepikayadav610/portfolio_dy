@@ -797,7 +797,10 @@ p {
     }
 
     .mb-5 {
-        margin-bottom: 3rem !important;
+        margin-bottom: 0rem !important;
+    }
+    .certification-text-p{
+        margin-bottom: 20px !important;
     }
 
     .certification-items {
@@ -806,7 +809,7 @@ p {
 
     .certificate-item {
         width: 100%;
-        height: 405px;
+        height: 445px;
         margin-bottom: 20px;
     }
 
